@@ -161,8 +161,12 @@
         if (this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] != 0) return this.mapa[23];
         if (this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] && this.mapa[26] == this.mapa[27] != 0) return this.mapa[24];
         // quinta fila
-
-
+        if (this.mapa[28] == this.mapa[29] && this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] != 0) return this.mapa[28];
+        if (this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] != 0) return this.mapa[29];
+        if (this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] != 0) return this.mapa[30];
+        if (this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] && this.mapa[33] == this.mapa[34] != 0) return this.mapa[31];
+        //sexta fila
+        
 
         
         //Las líneas verticales
