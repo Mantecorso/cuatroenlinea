@@ -156,10 +156,15 @@
         if (this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] != 0) return this.mapa[16];
         if (this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] && this.mapa[19] == this.mapa[20] != 0) return this.mapa[17];
         //cuarta fila
-        
+        if (this.mapa[21] == this.mapa[22] && this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] != 0) return this.mapa[21];
+        if (this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] != 0) return this.mapa[22];
+        if (this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] != 0) return this.mapa[23];
+        if (this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] && this.mapa[26] == this.mapa[27] != 0) return this.mapa[24];
+        // quinta fila
 
-        if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[3] != 0) return this.mapa[3];
-        if (this.mapa[6] == this.mapa[7] && this.mapa[7] == this.mapa[8] && this.mapa[6] != 0) return this.mapa[6];
+
+
+        
         //Las líneas verticales
         if (this.mapa[0] == this.mapa[3] && this.mapa[3] == this.mapa[6] && this.mapa[0] != 0) return this.mapa[0];
         if (this.mapa[1] == this.mapa[4] && this.mapa[4] == this.mapa[7] && this.mapa[1] != 0) return this.mapa[1];
