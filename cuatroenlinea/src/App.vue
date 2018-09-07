@@ -146,8 +146,11 @@
         if (this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[2] != 0) return this.mapa[2];
         if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[5] == this.mapa[6] && this.mapa[3] != 0) return this.mapa[3];
         // segunda fila
-
-
+        if (this.mapa[7] == this.mapa[8] && this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] != 0) return this.mapa[7];
+        if (this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] != 0) return this.mapa[8];
+        if (this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] != 0) return this.mapa[9];
+        if (this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] && this.mapa[12] == this.mapa[13] != 0) return this.mapa[10];
+        // tercera fila
 
 
 
