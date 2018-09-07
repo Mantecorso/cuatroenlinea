@@ -1,60 +1,213 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <div class="headerGrid">
+      <div>
+        <a href="https://vuejs.org" target="_blank"><img src="./assets/logo.png" class="logo"></a>
+      </div>
+      <div>
+        <h1>Juego del cuatro en linea</h1>
+      </div>
+      <div>
+        <a href="https://mantecorso.github.io/LuisJuradoQ/" target="_blank"><img src="./assets/L.png" class="logo" alt=""></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 espace">
+
+        <table align="center" border="1">
+          <tr>
+            <td class="casilla" id="c0" v-on:click="pcelda(0)"></td>
+            <td class="casilla" id="c1" v-on:click="pcelda(1)"></td>
+            <td class="casilla" id="c2" v-on:click="pcelda(2)"></td>
+            <td class="casilla" id="c3" v-on:click="pcelda(3)"></td>
+            <td class="casilla" id="c4" v-on:click="pcelda(4)"></td>
+            <td class="casilla" id="c5" v-on:click="pcelda(5)"></td>
+            <td class="casilla" id="c6" v-on:click="pcelda(6)"></td>
+          </tr>
+          <tr>
+            <td class="casilla" id="c7" v-on:click="pcelda(7)"></td>
+            <td class="casilla" id="c8" v-on:click="pcelda(8)"></td>
+            <td class="casilla" id="c9" v-on:click="pcelda(9)"></td>
+            <td class="casilla" id="c10" v-on:click="pcelda(10)"></td>
+            <td class="casilla" id="c11" v-on:click="pcelda(11)"></td>
+            <td class="casilla" id="c12" v-on:click="pcelda(12)"></td>
+            <td class="casilla" id="c13" v-on:click="pcelda(13)"></td>
+          </tr>
+          <tr>
+            <td class="casilla" id="c14" v-on:click="pcelda(14)"></td>
+            <td class="casilla" id="c15" v-on:click="pcelda(15)"></td>
+            <td class="casilla" id="c16" v-on:click="pcelda(16)"></td>
+            <td class="casilla" id="c17" v-on:click="pcelda(17)"></td>
+            <td class="casilla" id="c18" v-on:click="pcelda(18)"></td>
+            <td class="casilla" id="c19" v-on:click="pcelda(19)"></td>
+            <td class="casilla" id="c20" v-on:click="pcelda(20)"></td>
+          </tr>
+          <tr>
+            <td class="casilla" id="c21" v-on:click="pcelda(21)"></td>
+            <td class="casilla" id="c22" v-on:click="pcelda(22)"></td>
+            <td class="casilla" id="c23" v-on:click="pcelda(23)"></td>
+            <td class="casilla" id="c24" v-on:click="pcelda(24)"></td>
+            <td class="casilla" id="c25" v-on:click="pcelda(25)"></td>
+            <td class="casilla" id="c26" v-on:click="pcelda(26)"></td>
+            <td class="casilla" id="c27" v-on:click="pcelda(27)"></td>
+          </tr>
+          <tr>
+            <td class="casilla" id="c28" v-on:click="pcelda(28)"></td>
+            <td class="casilla" id="c29" v-on:click="pcelda(29)"></td>
+            <td class="casilla" id="c30" v-on:click="pcelda(30)"></td>
+            <td class="casilla" id="c31" v-on:click="pcelda(31)"></td>
+            <td class="casilla" id="c32" v-on:click="pcelda(32)"></td>
+            <td class="casilla" id="c33" v-on:click="pcelda(33)"></td>
+            <td class="casilla" id="c34" v-on:click="pcelda(34)"></td>
+          </tr>
+          <tr>
+            <td class="casilla" id="c35" v-on:click="pcelda(35)"></td>
+            <td class="casilla" id="c36" v-on:click="pcelda(36)"></td>
+            <td class="casilla" id="c37" v-on:click="pcelda(37)"></td>
+            <td class="casilla" id="c38" v-on:click="pcelda(38)"></td>
+            <td class="casilla" id="c39" v-on:click="pcelda(39)"></td>
+            <td class="casilla" id="c40" v-on:click="pcelda(40)"></td>
+            <td class="casilla" id="c41" v-on:click="pcelda(41)"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 espace">
+
+        <a href="javascript:location.reload()">
+          <button type="button" class="btn btn-warning">Reiniciar</button></a>
+
+      </div>
+
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+ export default {
+    name: 'app',
+    data: () => ({
+      mapa: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      jugador: 1,
+    }),
+    methods: {
+      dibujar: function () {
+        var i;
+        for (i = 0; i < 42; i++) {
+          if (this.mapa[i] == 0) {
+            document.getElementById("c" + i).style = "background-color: palegreen";
+          }
+          if (this.mapa[i] == 1) {
+            document.getElementById("c" + i).innerHTML = "X";
+          }
+          if (this.mapa[i] == 2) {
+            document.getElementById("c" + i).innerHTML = "O";
+          }
+        }
+      },
+      pcelda: function (celda) {
+        if (this.mapa[celda] == 0) {
+          if (this.jugador == 1) {
+            this.mapa[celda] = 1;
+            this.jugador = 2;
+          } else {
+            this.mapa[celda] = 2;
+            this.jugador = 1;
+          }
+        } else {
+          alert("No puedes pulsar sobre una celda ya seleccionada por otro jugador");
+        }
+        this.dibujar();
+        var r = this.ganador();
+        switch (r) {
+          case 0:
+            break;
+          case 1:
+            alert("¡Ganó el jugador X!");
+            break;
+          case 2:
+            alert("¡Ganó el jugador O!");
+            break;
+          case 3:
+            alert("¡Empate!");
+            break;
+        }
+      },
+      ganador: function () {
+        var numEspacios = 0;
+        var i;
+        for (i = 0; i < 42; i++) {
+          if (this.mapa[i] == 0) numEspacios++;
+        }
+        // Las líneas horizontales
+        if (this.mapa[0] == this.mapa[1] && this.mapa[1] == this.mapa[2] && this.mapa[0] != 0) return this.mapa[0];
+        if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[3] != 0) return this.mapa[3];
+        if (this.mapa[6] == this.mapa[7] && this.mapa[7] == this.mapa[8] && this.mapa[6] != 0) return this.mapa[6];
+        //Las líneas verticales
+        if (this.mapa[0] == this.mapa[3] && this.mapa[3] == this.mapa[6] && this.mapa[0] != 0) return this.mapa[0];
+        if (this.mapa[1] == this.mapa[4] && this.mapa[4] == this.mapa[7] && this.mapa[1] != 0) return this.mapa[1];
+        if (this.mapa[2] == this.mapa[5] && this.mapa[5] == this.mapa[8] && this.mapa[2] != 0) return this.mapa[2];
+        //Las diagonales
+        if (this.mapa[0] == this.mapa[4] && this.mapa[4] == this.mapa[8] && this.mapa[0] != 0) return this.mapa[0];
+        if (this.mapa[2] == this.mapa[4] && this.mapa[4] == this.mapa[6] && this.mapa[2] != 0) return this.mapa[2];
+        if (numEspacios > 0) {
+          return 0;
+        } else {
+          return 3;
+        }
+      }
     }
   }
-}
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ #app {
 
-h1, h2 {
-  font-weight: normal;
-}
+    font-family: 'Griffy', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  h1,
+  h2 {
+    font-weight: normal;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  .red {
+    background-color: palevioletred;
+    border-radius: 8px;
+  }
 
-a {
-  color: #42b983;
-}
+  .casilla {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+
+  .espace {
+    padding-top: 15px;
+  }
+
+  .headerGrid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 2fr 5fr 2fr;
+    text-align: center;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  table {
+    background-color: palegreen;
+    border-style: 2px double black;
+  }
+
+
 </style>
