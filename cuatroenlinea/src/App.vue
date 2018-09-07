@@ -203,9 +203,12 @@
 
         //Las diagonales
         // que locura
-        
-        if (this.mapa[0] == this.mapa[4] && this.mapa[4] == this.mapa[8] && this.mapa[0] != 0) return this.mapa[0];
-        if (this.mapa[2] == this.mapa[4] && this.mapa[4] == this.mapa[6] && this.mapa[2] != 0) return this.mapa[2];
+        // izquierda uno
+        if (this.mapa[0] == this.mapa[8] && this.mapa[8] == this.mapa[16] && this.mapa[16] == this.mapa[24] && this.mapa[0] != 0) return this.mapa[0];
+        if (this.mapa[7] == this.mapa[15] && this.mapa[15] == this.mapa[23] && this.mapa[23] == this.mapa[31] && this.mapa[7] != 0) return this.mapa[7];
+        if (this.mapa[14] == this.mapa[22] && this.mapa[22] == this.mapa[30] && this.mapa[30] == this.mapa[38] && this.mapa[14] != 0) return this.mapa[14];
+        // izquierda dos
+
         if (numEspacios > 0) {
           return 0;
         } else {
