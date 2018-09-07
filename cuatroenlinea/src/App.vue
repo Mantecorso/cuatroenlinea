@@ -142,17 +142,21 @@
         // Las líneas horizontales
         //primera fila
         if (this.mapa[0] == this.mapa[1] && this.mapa[1] == this.mapa[2] && this.mapa[2] == this.mapa[3] && this.mapa[0] != 0) return this.mapa[0];
-        if (this.mapa[1] == this.mapa[2] && this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] && this.mapa[1] != 0) return this.mapa[1];
-        if (this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[2] != 0) return this.mapa[2];
-        if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[5] == this.mapa[6] && this.mapa[3] != 0) return this.mapa[3];
+        if (this.mapa[1] == this.mapa[2] && this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] != 0) return this.mapa[1];
+        if (this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] != 0) return this.mapa[2];
+        if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[5] == this.mapa[6] != 0) return this.mapa[3];
         // segunda fila
         if (this.mapa[7] == this.mapa[8] && this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] != 0) return this.mapa[7];
         if (this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] != 0) return this.mapa[8];
         if (this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] != 0) return this.mapa[9];
         if (this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] && this.mapa[12] == this.mapa[13] != 0) return this.mapa[10];
         // tercera fila
-
-
+        if (this.mapa[14] == this.mapa[15] && this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] != 0) return this.mapa[14];
+        if (this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] != 0) return this.mapa[15];
+        if (this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] != 0) return this.mapa[16];
+        if (this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] && this.mapa[19] == this.mapa[20] != 0) return this.mapa[17];
+        //cuarta fila
+        
 
         if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[3] != 0) return this.mapa[3];
         if (this.mapa[6] == this.mapa[7] && this.mapa[7] == this.mapa[8] && this.mapa[6] != 0) return this.mapa[6];
