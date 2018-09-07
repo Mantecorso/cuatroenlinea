@@ -87,7 +87,7 @@
  export default {
     name: 'app',
     data: () => ({
-      mapa: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      mapa: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ],
       jugador: 1,
     }),
     methods: {
@@ -146,30 +146,30 @@
         if (this.mapa[2] == this.mapa[3] && this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] != 0) return this.mapa[2];
         if (this.mapa[3] == this.mapa[4] && this.mapa[4] == this.mapa[5] && this.mapa[5] == this.mapa[6] != 0) return this.mapa[3];
         // segunda fila
-        if (this.mapa[7] == this.mapa[8] && this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] != 0) return this.mapa[7];
-        if (this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] != 0) return this.mapa[8];
-        if (this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] != 0) return this.mapa[9];
-        if (this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] && this.mapa[12] == this.mapa[13] != 0) return this.mapa[10];
+        if (this.mapa[7] == this.mapa[8] && this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] && this.mapa[7] != 0) return this.mapa[7];
+        if (this.mapa[8] == this.mapa[9] && this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] && this.mapa[8] != 0) return this.mapa[8];
+        if (this.mapa[9] == this.mapa[10] && this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] && this.mapa[9] != 0) return this.mapa[9];
+        if (this.mapa[10] == this.mapa[11] && this.mapa[11] == this.mapa[12] && this.mapa[12] == this.mapa[13] && this.mapa[10] != 0) return this.mapa[10];
         // tercera fila
-        if (this.mapa[14] == this.mapa[15] && this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] != 0) return this.mapa[14];
-        if (this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] != 0) return this.mapa[15];
-        if (this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] != 0) return this.mapa[16];
-        if (this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] && this.mapa[19] == this.mapa[20] != 0) return this.mapa[17];
+        if (this.mapa[14] == this.mapa[15] && this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] && this.mapa[14] != 0) return this.mapa[14];
+        if (this.mapa[15] == this.mapa[16] && this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] && this.mapa[15] != 0) return this.mapa[15];
+        if (this.mapa[16] == this.mapa[17] && this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] && this.mapa[16] != 0) return this.mapa[16];
+        if (this.mapa[17] == this.mapa[18] && this.mapa[18] == this.mapa[19] && this.mapa[19] == this.mapa[20] && this.mapa[17] != 0) return this.mapa[17];
         //cuarta fila
-        if (this.mapa[21] == this.mapa[22] && this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] != 0) return this.mapa[21];
-        if (this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] != 0) return this.mapa[22];
-        if (this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] != 0) return this.mapa[23];
-        if (this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] && this.mapa[26] == this.mapa[27] != 0) return this.mapa[24];
+        if (this.mapa[21] == this.mapa[22] && this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] && this.mapa[21] != 0) return this.mapa[21];
+        if (this.mapa[22] == this.mapa[23] && this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] && this.mapa[22] != 0) return this.mapa[22];
+        if (this.mapa[23] == this.mapa[24] && this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] && this.mapa[23] != 0) return this.mapa[23];
+        if (this.mapa[24] == this.mapa[25] && this.mapa[25] == this.mapa[26] && this.mapa[26] == this.mapa[27] && this.mapa[24] != 0) return this.mapa[24];
         // quinta fila
-        if (this.mapa[28] == this.mapa[29] && this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] != 0) return this.mapa[28];
-        if (this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] != 0) return this.mapa[29];
-        if (this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] != 0) return this.mapa[30];
-        if (this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] && this.mapa[33] == this.mapa[34] != 0) return this.mapa[31];
+        if (this.mapa[28] == this.mapa[29] && this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] && this.mapa[28] != 0) return this.mapa[28];
+        if (this.mapa[29] == this.mapa[30] && this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] && this.mapa[29] != 0) return this.mapa[29];
+        if (this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] && this.mapa[30] != 0) return this.mapa[30];
+        if (this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] && this.mapa[33] == this.mapa[34] && this.mapa[31] != 0) return this.mapa[31];
         //sexta fila
-        if (this.mapa[35] == this.mapa[36] && this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] != 0) return this.mapa[35];
-        if (this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] != 0) return this.mapa[36];
-        if (this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] != 0) return this.mapa[37];
-        if (this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] && this.mapa[40] == this.mapa[41] != 0) return this.mapa[38];
+        if (this.mapa[35] == this.mapa[36] && this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] && this.mapa[35] != 0) return this.mapa[35];
+        if (this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] && this.mapa[36] != 0) return this.mapa[36];
+        if (this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] && this.mapa[37] != 0) return this.mapa[37];
+        if (this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] && this.mapa[40] == this.mapa[41] && this.mapa[38] != 0) return this.mapa[38];
 
         //Las líneas verticales
         // Columna uno
