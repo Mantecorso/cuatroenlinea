@@ -166,14 +166,44 @@
         if (this.mapa[30] == this.mapa[31] && this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] != 0) return this.mapa[30];
         if (this.mapa[31] == this.mapa[32] && this.mapa[32] == this.mapa[33] && this.mapa[33] == this.mapa[34] != 0) return this.mapa[31];
         //sexta fila
-        
+        if (this.mapa[35] == this.mapa[36] && this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] != 0) return this.mapa[35];
+        if (this.mapa[36] == this.mapa[37] && this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] != 0) return this.mapa[36];
+        if (this.mapa[37] == this.mapa[38] && this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] != 0) return this.mapa[37];
+        if (this.mapa[38] == this.mapa[39] && this.mapa[39] == this.mapa[40] && this.mapa[40] == this.mapa[41] != 0) return this.mapa[38];
 
-        
         //Las líneas verticales
-        if (this.mapa[0] == this.mapa[3] && this.mapa[3] == this.mapa[6] && this.mapa[0] != 0) return this.mapa[0];
-        if (this.mapa[1] == this.mapa[4] && this.mapa[4] == this.mapa[7] && this.mapa[1] != 0) return this.mapa[1];
-        if (this.mapa[2] == this.mapa[5] && this.mapa[5] == this.mapa[8] && this.mapa[2] != 0) return this.mapa[2];
+        // Columna uno
+        if (this.mapa[0] == this.mapa[7] && this.mapa[7] == this.mapa[14] && this.mapa[14] == this.mapa[21] && this.mapa[0] != 0) return this.mapa[0];
+        if (this.mapa[7] == this.mapa[14] && this.mapa[14] == this.mapa[21] && this.mapa[21] == this.mapa[28] && this.mapa[7] != 0) return this.mapa[7];
+        if (this.mapa[14] == this.mapa[21] && this.mapa[21] == this.mapa[28] && this.mapa[28] == this.mapa[35] && this.mapa[14] !=0) return this.mapa[14];
+        // Columna dos
+        if (this.mapa[1] == this.mapa[8] && this.mapa[8] == this.mapa[15] && this.mapa[15] == this.mapa[22] && this.mapa[1] != 0) return this.mapa[1];
+        if (this.mapa[8] == this.mapa[15] && this.mapa[15] == this.mapa[22] && this.mapa[22] == this.mapa[29] && this.mapa[8] != 0) return this.mapa[8];
+        if (this.mapa[15] == this.mapa[22] && this.mapa[22] == this.mapa[29] && this.mapa[29] == this.mapa[36] && this.mapa[15] !=0) return this.mapa[15];
+        // Columna tres
+        if (this.mapa[2] == this.mapa[9] && this.mapa[9] == this.mapa[16] && this.mapa[16] == this.mapa[23] && this.mapa[2] != 0) return this.mapa[2];
+        if (this.mapa[9] == this.mapa[16] && this.mapa[16] == this.mapa[23] && this.mapa[23] == this.mapa[30] && this.mapa[9] != 0) return this.mapa[9];
+        if (this.mapa[16] == this.mapa[23] && this.mapa[23] == this.mapa[30] && this.mapa[30] == this.mapa[37] && this.mapa[16] !=0) return this.mapa[16];
+        // Columna cuatro
+        if (this.mapa[3] == this.mapa[10] && this.mapa[10] == this.mapa[17] && this.mapa[17] == this.mapa[24] && this.mapa[3] != 0) return this.mapa[3];
+        if (this.mapa[10] == this.mapa[17] && this.mapa[17] == this.mapa[24] && this.mapa[24] == this.mapa[31] && this.mapa[10] != 0) return this.mapa[10];
+        if (this.mapa[17] == this.mapa[24] && this.mapa[24] == this.mapa[31] && this.mapa[31] == this.mapa[38] && this.mapa[17] !=0) return this.mapa[17];
+        // columna cinco
+        if (this.mapa[4] == this.mapa[11] && this.mapa[11] == this.mapa[18] && this.mapa[18] == this.mapa[25] && this.mapa[4] != 0) return this.mapa[4];
+        if (this.mapa[11] == this.mapa[18] && this.mapa[18] == this.mapa[25] && this.mapa[25] == this.mapa[32] && this.mapa[11] != 0) return this.mapa[11];
+        if (this.mapa[18] == this.mapa[25] && this.mapa[25] == this.mapa[32] && this.mapa[32] == this.mapa[39] && this.mapa[18] !=0) return this.mapa[18];
+        // Columna seis
+        if (this.mapa[5] == this.mapa[12] && this.mapa[12] == this.mapa[19] && this.mapa[19] == this.mapa[26] && this.mapa[5] != 0) return this.mapa[5];
+        if (this.mapa[12] == this.mapa[19] && this.mapa[19] == this.mapa[26] && this.mapa[26] == this.mapa[33] && this.mapa[12] != 0) return this.mapa[12];
+        if (this.mapa[19] == this.mapa[26] && this.mapa[26] == this.mapa[33] && this.mapa[33] == this.mapa[40] && this.mapa[19] !=0) return this.mapa[19];
+        // Columna siete
+        if (this.mapa[6] == this.mapa[13] && this.mapa[13] == this.mapa[20] && this.mapa[20] == this.mapa[27] && this.mapa[6] != 0) return this.mapa[6];
+        if (this.mapa[13] == this.mapa[20] && this.mapa[20] == this.mapa[27] && this.mapa[27] == this.mapa[34] && this.mapa[13] != 0) return this.mapa[13];
+        if (this.mapa[20] == this.mapa[27] && this.mapa[27] == this.mapa[34] && this.mapa[34] == this.mapa[41] && this.mapa[20] !=0) return this.mapa[20];
+
         //Las diagonales
+        // que locura
+        
         if (this.mapa[0] == this.mapa[4] && this.mapa[4] == this.mapa[8] && this.mapa[0] != 0) return this.mapa[0];
         if (this.mapa[2] == this.mapa[4] && this.mapa[4] == this.mapa[6] && this.mapa[2] != 0) return this.mapa[2];
         if (numEspacios > 0) {
