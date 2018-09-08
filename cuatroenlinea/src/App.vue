@@ -233,7 +233,10 @@
         if (this.mapa[11] == this.mapa[17] && this.mapa[17] == this.mapa[23] && this.mapa[23] == this.mapa[29] && this.mapa[11] != 0) return this.mapa[11];
         if (this.mapa[18] == this.mapa[24] && this.mapa[24] == this.mapa[30] && this.mapa[30] == this.mapa[36] && this.mapa[18] != 0) return this.mapa[18];
         // derecha cuatro
-               
+        if (this.mapa[3] == this.mapa[9] && this.mapa[9] == this.mapa[15] && this.mapa[15] == this.mapa[21] && this.mapa[3] != 0) return this.mapa[3];
+        if (this.mapa[10] == this.mapa[16] && this.mapa[16] == this.mapa[22] && this.mapa[22] == this.mapa[28] && this.mapa[10] != 0) return this.mapa[10];
+        if (this.mapa[17] == this.mapa[23] && this.mapa[23] == this.mapa[29] && this.mapa[29] == this.mapa[35] && this.mapa[17] != 0) return this.mapa[17];
+        
         if (numEspacios > 0) {
           return 0;
         } else {
