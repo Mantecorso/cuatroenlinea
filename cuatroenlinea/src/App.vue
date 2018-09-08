@@ -208,6 +208,20 @@
         if (this.mapa[7] == this.mapa[15] && this.mapa[15] == this.mapa[23] && this.mapa[23] == this.mapa[31] && this.mapa[7] != 0) return this.mapa[7];
         if (this.mapa[14] == this.mapa[22] && this.mapa[22] == this.mapa[30] && this.mapa[30] == this.mapa[38] && this.mapa[14] != 0) return this.mapa[14];
         // izquierda dos
+        if (this.mapa[1] == this.mapa[9] && this.mapa[9] == this.mapa[17] && this.mapa[17] == this.mapa[25] && this.mapa[1] != 0) return this.mapa[1];
+        if (this.mapa[8] == this.mapa[16] && this.mapa[16] == this.mapa[24] && this.mapa[24] == this.mapa[32] && this.mapa[8] != 0) return this.mapa[8];
+        if (this.mapa[15] == this.mapa[23] && this.mapa[23] == this.mapa[31] && this.mapa[31] == this.mapa[39] && this.mapa[15] != 0) return this.mapa[15];
+        // izquierda tres
+        if (this.mapa[2] == this.mapa[10] && this.mapa[10] == this.mapa[18] && this.mapa[18] == this.mapa[26] && this.mapa[2] != 0) return this.mapa[2];
+        if (this.mapa[9] == this.mapa[17] && this.mapa[17] == this.mapa[25] && this.mapa[25] == this.mapa[33] && this.mapa[9] != 0) return this.mapa[9];
+        if (this.mapa[16] == this.mapa[24] && this.mapa[24] == this.mapa[32] && this.mapa[32] == this.mapa[40] && this.mapa[16] != 0) return this.mapa[16];
+        // izquierda cuatro
+        if (this.mapa[3] == this.mapa[11] && this.mapa[11] == this.mapa[19] && this.mapa[19] == this.mapa[27] && this.mapa[3] != 0) return this.mapa[3];
+        if (this.mapa[10] == this.mapa[18] && this.mapa[18] == this.mapa[26] && this.mapa[26] == this.mapa[34] && this.mapa[10] != 0) return this.mapa[10];
+        if (this.mapa[17] == this.mapa[25] && this.mapa[25] == this.mapa[33] && this.mapa[33] == this.mapa[41] && this.mapa[17] != 0) return this.mapa[17];
+        
+        // derecha uno
+
 
         if (numEspacios > 0) {
           return 0;
