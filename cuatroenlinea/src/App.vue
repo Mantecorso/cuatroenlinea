@@ -221,8 +221,15 @@
         if (this.mapa[17] == this.mapa[25] && this.mapa[25] == this.mapa[33] && this.mapa[33] == this.mapa[41] && this.mapa[17] != 0) return this.mapa[17];
         
         // derecha uno
-
-
+        if (this.mapa[6] == this.mapa[12] && this.mapa[12] == this.mapa[18] && this.mapa[18] == this.mapa[24] && this.mapa[6] != 0) return this.mapa[6];
+        if (this.mapa[13] == this.mapa[19] && this.mapa[19] == this.mapa[25] && this.mapa[25] == this.mapa[31] && this.mapa[13] != 0) return this.mapa[13];
+        if (this.mapa[20]== this.mapa[26] && this.mapa[26]== this.mapa[32] && this.mapa[32]== this.mapa[38] && this.mapa[20] != 0) return this.mapa[20];
+        // derecha dos
+        if (this.mapa[5] == this.mapa[11] && this.mapa[11] == this.mapa[17] && this.mapa[17] == this.mapa[23] && this.mapa[5] != 0) return this.mapa[5];
+        if (this.mapa[12] == this.mapa[18] && this.mapa[18] == this.mapa[24] && this.mapa[24] == this.mapa[30] && this.mapa[12] != 0) return this.mapa[12];
+        if (this.mapa[19] == this.mapa[25] && this.mapa[25] == this.mapa[31] && this.mapa[31] == this.mapa[37] && this.mapa[19] != 0) return this.mapa[19];
+        // derecha tres
+                
         if (numEspacios > 0) {
           return 0;
         } else {
