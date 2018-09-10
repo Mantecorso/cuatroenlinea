@@ -78,7 +78,10 @@
           <button type="button" class="btn btn-warning">Reiniciar</button></a>
 
       </div>
+  <!--    <column v-for="let column of tablero" :col="column">
 
+    <celda v-for="let fila of [0,1,2,3,4,5,6]" :fila="fila" >
+-->
     </div>
   </div>
 </template>
@@ -88,11 +91,29 @@
     name: 'app',
     data: () => ({
       mapa: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ],
+      //colum1: [0, 0, 0, 0, 0, 0, ],
+      //colum2: [0, 0, 0, 0, 0, 0, ],
+      //colum3: [0, 0, 0, 0, 0, 0, ],
+      //colum4: [0, 0, 0, 0, 0, 0, ],
+      //colum5: [0, 0, 0, 0, 0, 0, ],
+      //colum6: [0, 0, 0, 0, 0, 0, ],
+      //colum7: [0, 0, 0, 0, 0, 0, ],
       jugador: 1,
     }),
     methods: {
       dibujar: function () {
         var i;
+      //for (i = 0; i < 6; i++) {
+      //  if (this.colum1[i] == 0 || this.colum2[i] == 0 || this.colum3[i] == 0 || this.colum4[i] == 0 || this.colum5[i] == 0 || this.colum6[i] == 0 || this.colum7[i] == 0) {
+      //    document.getElementById("c" + i).style = "background-color: red";
+      //  }
+      //  if (this.colum1[i] == 1 || this.colum2[i] == 1 || this.colum3[i] == 1 || this.colum4[i] == 1 || this.colum5[i] == 1 || this.colum6[i] == 1 || this.colum7[i] == 1) {
+      //    document.getElementById("c" + i).innerHTML = "X";
+      //  }
+      //  if (this.colum1[i] == 2 || this.colum2[i] == 2 || this.colum3[i] == 2 || this.colum4[i] == 2 || this.colum5[i] == 2 || this.colum6[i] == 2 || this.colum7[i] == 2) {
+      //    document.getElementById("c" + i).innerHTML = "O";
+      //  }
+      //}
         for (i = 0; i < 42; i++) {
           if (this.mapa[i] == 0) {
             document.getElementById("c" + i).style = "background-color: palegreen";
@@ -106,6 +127,15 @@
         }
       },
       pcelda: function (celda) {
+      //    if (this.colum1[celda] == 0 || this.colum2[celda] == 0 || this.colum3[celda] == 0 || this.colum4[celda] == 0 || this.colum5[celda] == 0 || this.colum6[celda] == 0 || this.colum7[celda] == 0) {
+      //      if (this.jugador == 1) {
+      //        (this.colum1[celda] = 1 || this.colum2[celda] = 1 || this.colum3[celda] = 1 || this.colum4[celda] = 1 || this.colum5[celda] = 1 || this.colum6[celda] = 1 || this.colum7[celda] = 1);
+      //        this.jugador = 2;
+      //      } else {
+      //        (this.colum1[celda] = 2 || this.colum2[celda] = 2 || this.colum3[celda] = 2 || this.colum4[celda] = 2 || this.colum5[celda] = 2 || this.colum6[celda] = 2 || this.colum7[celda] = 2);
+      //        this.jugador = 1;
+      //      }
+          
         if (this.mapa[celda] == 0) {
           if (this.jugador == 1) {
             this.mapa[celda] = 1;
@@ -115,7 +145,8 @@
             this.jugador = 1;
           }
         } else {
-          alert("No puedes pulsar sobre una celda ya seleccionada por otro jugador");
+        
+          swal("Oops!", "No puedes pulsar sobre una celda ya seleccionada por otro jugador", "error")
         }
         this.dibujar();
         var r = this.ganador();
@@ -123,13 +154,31 @@
           case 0:
             break;
           case 1:
-            alert("¡Ganó el jugador X!");
+            
+            swal({
+              title: "Has ganado X!!",
+              text: "Pulsa el boton reiniciar para volver a jugar",
+              icon: "success",
+              button: "Winner",
+            });
             break;
           case 2:
-            alert("¡Ganó el jugador O!");
+            
+            swal({
+              title: "Has ganado O!!",
+              text: "Pulsa el boton reiniciar para volver a jugar",
+              icon: "success",
+              button: "Winner",
+            });
             break;
           case 3:
-            alert("¡Empate!");
+            
+            swal({
+              title: "Empate!!",
+              text: "Pulsa el boton reiniciar para volver a jugar",
+              icon: "success",
+              button: "Next",
+            });
             break;
         }
       },
