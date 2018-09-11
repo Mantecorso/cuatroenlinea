@@ -74,8 +74,7 @@
       </div>
       <div class="col-12 espace">
 
-        <a href="javascript:location.reload()">
-          <button type="button" class="btn btn-warning">Reiniciar</button></a>
+          <b-button type="button" variant="warning" href="javascript:location.reload()">Reiniciar</b-button>
 
       </div>
   <!--    <column v-for="let column of tablero" :col="column">
